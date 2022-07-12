@@ -1,0 +1,21 @@
+# Python
+
+x = 0
+y = 1
+numeroAtualFibo = x + y
+
+numero = int(input("digite um numero positivo inteiro"))
+
+while numeroAtual <= numero:
+  x = y
+  y = numeroAtual
+  numeroAtual = x + y
+  if numeroAtual == numero:
+    print("Pertence a sequencia Fibo")
+    break
+
+
+if numero == 0:
+  print("Pertence a sequencia Fibo")
+elif (numeroAtual > numero):
+  print("Não pertence a sequencia Fibo")
